@@ -194,3 +194,48 @@ footer {
   font-size: 0.9rem;
   border-top: 1px solid #111;
 }
+
+.gallery {
+  padding: 80px 20px;
+  background: linear-gradient(to bottom, #001133, #000);
+  text-align: center;
+}
+
+.gallery h2 {
+  font-size: 2rem;
+  color: #00a2ff;
+  margin-bottom: 40px;
+}
+
+.gallery-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.gallery-item {
+  background: #111;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 280px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.gallery-item p {
+  padding: 15px;
+  color: #ccc;
+  background: #000;
+  font-size: 0.95rem;
+}
+
+.gallery-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #00a2ff;
+}
